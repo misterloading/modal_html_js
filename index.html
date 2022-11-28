@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    
+    <h1>Ventana "Modal"</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, delectus quaerat! Nam blanditiis velit unde itaque. Nulla obcaecati asperiores ullam pariatur ipsa adipisci fugit, labore facilis optio et. Aperiam, animi.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, delectus quaerat! Nam blanditiis velit unde itaque. Nulla obcaecati asperiores ullam pariatur ipsa adipisci fugit, labore facilis optio et. Aperiam, animi.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, delectus quaerat! Nam blanditiis velit unde itaque. Nulla obcaecati asperiores ullam pariatur ipsa adipisci fugit, labore facilis optio et. Aperiam, animi.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, delectus quaerat! Nam blanditiis velit unde itaque. Nulla obcaecati asperiores ullam pariatur ipsa adipisci fugit, labore facilis optio et. Aperiam, animi.</p>
+
+    <button id="btn-abrir-modal">
+        Abrir modal
+    </button>
+
+    <dialog id="modal">
+        <h2>Hola soy un modal</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, officiis tenetur nostrum quis blanditiis fugit culpa iusto veniam, voluptatum officia eaque ut impedit. Ea, quasi temporibus. Aperiam repellat nulla itaque!</p>
+       
+        <button id="btn-cerrar-modal">
+            Cerrar modal
+        </button>
+
+    </dialog>
+
+    <script>
+        const btnAbrirModal = document.querySelector("#btn-abrir-modal");
+        const btnCerrarModal = document.querySelector("#btn-cerrar-modal");
+        const modal = document.querySelector("#modal");
+
+        btnAbrirModal.addEventListener("click", ()=>{
+            modal.showModal();
+        })
+
+        btnCerrarModal.addEventListener("click", ()=>{
+            modal.close();
+        })
+    </script>
+
+    <style>
+        #modal::backdrop{
+            background-color: rgba(0,0,0,.55);
+        }
+    </style>
+
+</body>
+</html>
